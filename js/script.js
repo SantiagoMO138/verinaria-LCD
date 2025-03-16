@@ -4,25 +4,43 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     menu.classList.toggle('active');
 });
 
-// Modal para la galería
-const modal = document.getElementById('gallery-modal');
-const modalImg = document.getElementById('modal-image');
-const closeModal = document.getElementById('close-modal');
-const galleryItems = document.querySelectorAll('.gallery-item img');
+// Galería deslizable y modal
+if (document.querySelector('.gallery-container')) {
+    const galleryContainer = document.querySelector('.gallery-container');
+    const prevButton = document.querySelector('.gallery-prev');
+    const nextButton = document.querySelector('.gallery-next');
+    const modal = document.getElementById('gallery-modal');
+    const modalImg = document.getElementById('modal-image');
+    const modalDesc = document.getElementById('modal-description');
+    const closeModal = document.getElementById('close-modal');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const itemWidth = 300 + 15; // Ancho del item (300px) + gap (15px)
 
-galleryItems.forEach(item => {
-    item.addEventListener('click', function () {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
+    // Desplazamiento de la galería
+    prevButton.addEventListener('click', function () {
+        galleryContainer.scrollLeft -= itemWidth;
     });
-});
 
-closeModal.addEventListener('click', function () {
-    modal.style.display = 'none';
-});
+    nextButton.addEventListener('click', function () {
+        galleryContainer.scrollLeft += itemWidth;
+    });
 
-modal.addEventListener('click', function (e) {
-    if (e.target === modal) {
+    // Modal al hacer clic en una imagen
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function () {
+            modal.style.display = 'block';
+            modalImg.src = this.querySelector('img').src;
+            modalDesc.textContent = this.getAttribute('data-description');
+        });
+    });
+
+    closeModal.addEventListener('click', function () {
         modal.style.display = 'none';
-    }
-});
+    });
+
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
