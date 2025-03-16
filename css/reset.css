@@ -1,0 +1,45 @@
+/* reset.css */
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font size and family */
+html {
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default table border */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default button styles */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Set default image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
