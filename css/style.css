@@ -112,7 +112,6 @@ footer {
     width: 100%;
 }
 
-/* Estilos para listas de pacientes y doctores */
 .pacientes-lista,
 .doctores-lista {
     list-style: none;
@@ -126,7 +125,38 @@ footer {
     margin-bottom: 10px;
     border-radius: 4px;
 }
+#patients-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
+#patients-history th, #patients-history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#patients-history th {
+    background-color: #f4f4f4;
+}
+
+.patient-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;}
 /* Responsive */
 @media (max-width: 768px) {
     #menu-toggle {

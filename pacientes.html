@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria</h1>
+        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#gallery">Galería: Nuestras instalaciones</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+                <li><a href="pacientes.html">Pacientes</a></li>
+                <li><a href="doctores.html">Doctores</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Cambiar Tema</button>
+    </header>
+    <main>
+        <section id="patients-list">
+            <h1>Descripción Paciente</h1>
+            <article class="patient-card">
+                <h3>Nombre: <span class="patient-name"></span></h3>
+                <p><strong>Edad:</strong> <span class="patient-age"></span></p>
+                <p><strong>Dueño:</strong> <span class="patient-owner"></span></p>
+                <p><strong>Raza:</strong> <span class="patient-breed"></span></p>
+                <p><strong>Especie:</strong> <span class="patient-species"></span></p>
+                <p><strong>Descripción:</strong> <span class="patient-description"></span></p>
+                <!-- foto?-->
+            </article>
+        </section>
+        <section id="patients-history">
+            <h1>Historial Paciente</h1>
+            <table id="history-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Motivo</th>
+                        <th>Diagnóstico</th>
+                        <th>Tratamiento</th>
+                        <th>Veterinario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos serán insertados dinámicamente aquí -->
+                </tbody>
+            </table>
+            <article class="patient-history"></article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Santiago. A. Murillo, Leandro Mardesich, Adrian Torrico - Todos los derechos reservados - Cochabamba
+        </p>
+    </footer>
+</body>
+</html>
