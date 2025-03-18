@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctores</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Veterinaria</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pacientes.html">Pacientes</a></li>
+                <li><a href="doctores.html">Doctores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar doctor por nombre...">
+            <button id="search-button">Buscar</button>
+        </div>
+
+        <section id="doctors-list">
+            <h1>Nuestros Doctores</h1>
+
+            <article class="doctor-card">
+                <div class="doctor-info">
+                    <h3>Nombre: <span class="doctor-name">Dr. Juan Rodríguez</span></h3>
+                    <p><strong>Especialidad:</strong> Cirugía y Traumatología</p>
+                    <p><strong>Experiencia:</strong> 10 años</p>
+                    <p><strong>Correo:</strong> juan.rodriguez@vetclinic.com</p>
+                    <p><strong>Descripción:</strong> Especialista en cirugía ortopédica y cuidado postoperatorio de mascotas.</p>
+                </div>
+                <div class="doctor-photo">
+                    <img src="image/doctores/doctor1.jpg" alt="Foto del Dr. Juan Rodríguez">
+                </div>
+            </article>
+
+            <article class="doctor-card">
+                <div class="doctor-info">
+                    <h3>Nombre: <span class="doctor-name">Dra. María Martínez</span></h3>
+                    <p><strong>Especialidad:</strong> Medicina General y Vacunación</p>
+                    <p><strong>Experiencia:</strong> 8 años</p>
+                    <p><strong>Correo:</strong> maria.martinez@vetclinic.com</p>
+                    <p><strong>Descripción:</strong> Encargada de consultas generales, chequeos y vacunación.</p>
+                </div>
+                <div class="doctor-photo">
+                    <img src="image/doctores/doctor2.jpg" alt="Foto de la Dra. María Martínez">
+                </div>
+            </article>
+
+        </section>
+
+        <section id="doctors-schedule">
+            <h1>Horarios de Atención</h1>
+            <table id="schedule-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Juan Rodríguez</td>
+                        <td>Lunes a Viernes</td>
+                        <td>09:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dra. María Martínez</td>
+                        <td>Martes a Sábado</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Santiago. A. Murillo, Leandro Mardesich, Adrian Torrico - Todos los derechos reservados - Cochabamba</p>
+    </footer>
+
+</body>
+
+</html>

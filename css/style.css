@@ -29,6 +29,10 @@ header {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
 }
 
 header h1 {
@@ -261,6 +265,7 @@ p {
 .doctores-lista {
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .pacientes-lista li,
@@ -279,6 +284,7 @@ footer {
     text-align: center;
     padding: 15px 0;
     width: 100%;
+
 }
 
 footer p {
