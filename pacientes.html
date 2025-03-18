@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina de una Veterinaria">
-    <meta name="keywords" content="pets, animals, veterinaria, mascotas">
-    <meta name="author" content="Santiago. A. Murillo, Leandro Mardesich, Adrian Torrico">
-    <title>Veterinaria - Inicio</title>
+    <title>Pacientes</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,70 +16,70 @@
         <button id="menu-toggle" aria-label="Abrir menú">☰</button>
         <nav id="menu">
             <ul>
-                <li><a href="#about">Sobre nosotros</a></li>
-                <li><a href="#gallery">Galería: Nuestras instalaciones</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="pacientes.html">Pacientes</a></li>
                 <li><a href="doctores.html">Doctores</a></li>
             </ul>
         </nav>
         <button id="theme-toggle">Cambiar Tema</button>
     </header>
-
-    <div class="container">
-        <section id="about">
-            <div>
-                <h2>Sobre nosotros</h2>
-                <p>Bienvenidos a nuestra veterinaria, donde cuidamos de tus mascotas con amor y profesionalismo.</p>
-            </div>
-            <img src="image/perfil/WhatsApp Image 2025-02-04 at 9.36.16 AM.jpeg" alt="Foto de la veterinaria">
-        </section>
-
-        <section id="gallery" class="gallery">
-            <h2>Galería</h2>
-            <div class="gallery-container">
-                <div class="gallery-item"><img src="image/galeria/imagen_1.png" alt="Imagen 1"></div>
-                <div class="gallery-item"><img src="image/galeria/imagen_2.png" alt="Imagen 2"></div>
-                <div class="gallery-item"><img src="image/galeria/imagen_3.png" alt="Imagen 3"></div>
-                <div class="gallery-item"><img src="image/galeria/imagen_4.jpeg" alt="Imagen 4"></div>
-                <div class="gallery-item"><img src="image/galeria/imagen_5.jpeg" alt="Imagen 5"></div>
-                <div class="gallery-item"><img src="image/galeria/imagen_6.jpeg" alt="Imagen 6"></div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contacto</h2>
-            <div class="contact-container">
-                <form action="contact.php" method="post" class="contact-form">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    <p><strong>Correo Electrónico:</strong> vet@xample.com</p>
-                    <p><strong>Teléfono:</strong> +591 12345678</p>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar paciente por nombre...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <section id="patients-list">
+            <h1>Descripción Paciente</h1>
+            <article class="patient-card">
+                <div class="patient-info">
+                    <h3>Nombre: <span class="patient-name">Walter</span></h3>
+                    <p><strong>Edad:</strong> <span class="patient-age">5 años</span></p>
+                    <p><strong>Dueño:</strong> <span class="patient-owner">Adrian Murillo</span></p>
+                    <p><strong>Raza:</strong> <span class="patient-breed">American Pit Bull Terrier</span></p>
+                    <p><strong>Especie:</strong> <span class="patient-species">Canino</span></p>
+                    <p><strong>Descripción:</strong> <span class="patient-description">Blanco</span></p>
                 </div>
-            </div>
+                <div class="patient-photo">
+                    <img src="https://preview.redd.it/perro-del-meme-v0-o3rwm70gkdsa1.jpg?width=194&format=pjpg&auto=webp&s=9dce27bf3de7a6eecea68025a4f4a468207a2060"
+                        alt="Foto de Firulais">
+                </div>
+            </article>
         </section>
-    </div>
-
-    <div id="gallery-modal" class="modal">
-        <span id="close-modal" class="close">×</span>
-        <img id="modal-image" class="modal-content" alt="Imagen ampliada">
-    </div>
-
+        <section id="patients-history">
+            <h1>Historial Paciente</h1>
+            <table id="history-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Motivo</th>
+                        <th>Diagnóstico</th>
+                        <th>Tratamiento</th>
+                        <th>Veterinario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-03-10</td>
+                        <td>Chequeo General</td>
+                        <td>Buen estado de salud</td>
+                        <td>Vacunación anual</td>
+                        <td>Dr. Rodríguez</td>
+                    </tr>
+                    <tr>
+                        <td>2024-12-05</td>
+                        <td>Molestia en la pata</td>
+                        <td>Esguince leve</td>
+                        <td>Reposo y antiinflamatorios</td>
+                        <td>Dra. Martínez</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     <footer>
         <p>© 2025 Santiago. A. Murillo, Leandro Mardesich, Adrian Torrico - Todos los derechos reservados - Cochabamba
         </p>
     </footer>
-
-    <script src="js/script.js"></script>
-    <script src="js/theme.js"></script>
 </body>
 
 </html>
