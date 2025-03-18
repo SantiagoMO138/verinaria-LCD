@@ -1,9 +1,4 @@
 // js/script.js
-document.getElementById('menu-toggle').addEventListener('click', function () {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-});
-
 // Galería deslizable y modal
 if (document.querySelector('.gallery-container')) {
     const galleryContainer = document.querySelector('.gallery-container');
@@ -44,3 +39,14 @@ if (document.querySelector('.gallery-container')) {
         }
     });
 }
+
+// 1. Navegación suave
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href');
+        document.querySelector(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
