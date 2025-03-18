@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Veterinaria</h1>
+        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pacientes.html">Pacientes</a></li>
+                <li><a href="doctores.html">Doctores</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar paciente por nombre...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <section id="patients-list">
+            <h1>Descripción Paciente</h1>
+            <article class="patient-card">
+                <div class="patient-info">
+                    <h3>Nombre: <span class="patient-name">Walter</span></h3>
+                    <p><strong>Edad:</strong> <span class="patient-age">5 años</span></p>
+                    <p><strong>Dueño:</strong> <span class="patient-owner">Adrian Murillo</span></p>
+                    <p><strong>Raza:</strong> <span class="patient-breed">American Pit Bull Terrier</span></p>
+                    <p><strong>Especie:</strong> <span class="patient-species">Canino</span></p>
+                    <p><strong>Descripción:</strong> <span class="patient-description">Blanco</span></p>
+                </div>
+                <div class="patient-photo">
+                    <img src="https://preview.redd.it/perro-del-meme-v0-o3rwm70gkdsa1.jpg?width=194&format=pjpg&auto=webp&s=9dce27bf3de7a6eecea68025a4f4a468207a2060"
+                        alt="Foto de Firulais">
+                </div>
+            </article>
+        </section>
+        <section id="patients-history">
+            <h1>Historial Paciente</h1>
+            <table id="history-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Motivo</th>
+                        <th>Diagnóstico</th>
+                        <th>Tratamiento</th>
+                        <th>Veterinario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-03-10</td>
+                        <td>Chequeo General</td>
+                        <td>Buen estado de salud</td>
+                        <td>Vacunación anual</td>
+                        <td>Dr. Rodríguez</td>
+                    </tr>
+                    <tr>
+                        <td>2024-12-05</td>
+                        <td>Molestia en la pata</td>
+                        <td>Esguince leve</td>
+                        <td>Reposo y antiinflamatorios</td>
+                        <td>Dra. Martínez</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Santiago. A. Murillo, Leandro Mardesich, Adrian Torrico - Todos los derechos reservados - Cochabamba
+        </p>
+    </footer>
+</body>
+
+</html>
